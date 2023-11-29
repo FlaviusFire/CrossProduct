@@ -14,5 +14,5 @@ class MathVector
 		int  getCompontent(char component) const;
 		char getVarName() const { return varName; }
 
-		void printVector();
+		void printVector() const;
 };

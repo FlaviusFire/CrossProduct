@@ -19,7 +19,7 @@ MathVector::MathVector(char varName, int i, int j, int k)
 	this->k = k;
 }
 
-void MathVector::printVector()
+void MathVector::printVector() const
 {
 	cout << " = <" << i << ", " << j << ", " << k << ">";
 }

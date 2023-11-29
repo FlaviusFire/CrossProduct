@@ -55,7 +55,7 @@ int main()
 		cout << vec.getVarName() << " x ";
 	}
 
-	cout << "\b\b\b: ";
+	cout << "\b\b\b";
 	resultMathVector.printVector();
 
 	return 0;
