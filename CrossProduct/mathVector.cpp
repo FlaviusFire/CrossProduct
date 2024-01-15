@@ -24,11 +24,6 @@ void MathVector::printVector() const
 	cout << " = <" << i << ", " << j << ", " << k << ">";
 }
 
-bool MathVector::operator==(const MathVector& rhs) const
-{
-	return (varName == rhs.varName && i == rhs.i && j == rhs.j && k == rhs.k);
-}
-
 int MathVector::getCompontent(char component) const
 {
 	switch (component)

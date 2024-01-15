@@ -8,8 +8,6 @@ class MathVector
 
 		MathVector();
 		MathVector(char varName, int i, int j, int k);
-		
-		bool operator==(const MathVector& rhs) const;
 
 		int  getCompontent(char component) const;
 		char getVarName() const { return varName; }

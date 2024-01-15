@@ -29,7 +29,6 @@ int main()
 	}
 
 	vector<MathVector> MathVectors;
-	MathVectors.resize(numMathVectors);
 
 	for (int i = 0; i < numMathVectors; i++)
 	{
@@ -41,7 +40,7 @@ int main()
 		cout << "Enter the i, j, and k components of the vector: ";
 		cin >> a >> b >> c;
 
-		MathVectors[i] = MathVector(varName, a, b, c);
+		MathVectors.emplace_back(varName, a, b, c);							// emplace constucts the new object on the spot, avoiding assignment operator calls
 	}
 
 	MathVector resultMathVector = crossProduct(MathVectors[0], MathVectors[1]);
